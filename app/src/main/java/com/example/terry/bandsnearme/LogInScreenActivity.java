@@ -20,7 +20,8 @@ public class LogInScreenActivity extends AppCompatActivity {
     EditText edtuserid,edtpass;
     Button btnlogin;
     ProgressBar pbbar;
-    String userType;
+    public static String userType;
+    public static String verifiedUserLoginID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,7 +95,7 @@ public class LogInScreenActivity extends AppCompatActivity {
                     if (con == null) {
                         z = "Error in connection with SQL server";
                     } else {
-                        //String query = "select * from users where UserName= 'Band451' and UserPW= 'Band1PW'";
+
                         String query = "select * from users where UserName='" + userid + "' and UserPW='" + password + "'";
                         Statement stmt = con.createStatement();
                         ResultSet rs = stmt.executeQuery(query);
@@ -103,7 +104,7 @@ public class LogInScreenActivity extends AppCompatActivity {
                         {
 
                             userType = rs.getString("UserType");
-
+                            verifiedUserLoginID = userid;
                             z = "Login successful";
                             isSuccess=true;
                         }

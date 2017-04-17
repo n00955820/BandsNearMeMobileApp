@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.terry.bandsnearme">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -42,11 +42,15 @@
             android:name=".CreateAccountActivity"
             android:label="Create Account"
             android:parentActivityName=".LoginCreateAccountActivity" />
-
-        <activity android:name=".LogInScreenActivity"
+        <activity
+            android:name=".LogInScreenActivity"
             android:label="Log In"
-            android:parentActivityName=".LoginCreateAccountActivity"/>
-
+            android:parentActivityName=".LoginCreateAccountActivity" />
+        <activity
+            android:name=".ViewBandActivity"
+            android:parentActivityName=".IndividualUserActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".ViewVenueActivity"></activity>
     </application>
 
 </manifest>

@@ -7,10 +7,13 @@ import android.view.View;
 
 public class LoginCreateAccountActivity extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_create_account);
+        getSupportActionBar().hide();
     }
 
     public void goToLoginScreen(View v){
