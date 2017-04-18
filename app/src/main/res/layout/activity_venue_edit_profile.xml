@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.terry.bandsnearme.VenueEditProfile"
+    android:padding="10dp"
+    android:background="@color/lightGrey">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <!--android:background="@drawable/background" Merrillee, I think I missed this file -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/nameDisplay"
+            android:weightSum="1"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".75"
+                android:id="@+id/displayName"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:background="@drawable/upcomingbutton"
+                android:text="EDIT"
+                android:textColor="@color/white"
+                android:id="@+id/editNameBtn"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/nameEdit"
+            android:weightSum="1"
+            android:visibility="gone"
+            android:padding="10dp">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".75"
+                android:hint="Enter New Name"
+                android:id="@+id/editName"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:background="@drawable/upcomingbutton"
+                android:text="Submit"
+                android:id="@+id/editNameSubmit"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/locDisplay"
+            android:weightSum="1"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".75"
+                android:id="@+id/displayLoc"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:background="@drawable/upcomingbutton"
+                android:text="EDIT"
+                android:id="@+id/editLocBtn"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/locEdit"
+            android:weightSum="1"
+            android:visibility="gone"
+            android:padding="10dp">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".75"
+                android:hint="Enter New Location"
+                android:id="@+id/editLoc"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:background="@drawable/upcomingbutton"
+                android:text="Submit"
+                android:id="@+id/editLocSubmit"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/descDisplay"
+            android:weightSum="1"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".75"
+                android:id="@+id/displayDesc"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:background="@drawable/upcomingbutton"
+                android:text="EDIT"
+                android:id="@+id/editDescBtn"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/descEdit"
+            android:weightSum="1"
+            android:visibility="gone"
+            android:padding="10dp">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".75"
+                android:hint="Enter New Description"
+                android:id="@+id/editDesc"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:background="@drawable/upcomingbutton"
+                android:text="Submit"
+                android:id="@+id/editDescSubmit"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/addressDisplay"
+            android:weightSum="1"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".75"
+                android:id="@+id/displayAddress"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:background="@drawable/upcomingbutton"
+                android:text="EDIT"
+                android:id="@+id/editAddressBtn"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/addressEdit"
+            android:weightSum="1"
+            android:visibility="gone"
+            android:padding="10dp">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".75"
+                android:hint="Enter New Address"
+                android:id="@+id/editAddress"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:background="@drawable/upcomingbutton"
+                android:text="Submit"
+                android:id="@+id/editAddressSubmit"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+

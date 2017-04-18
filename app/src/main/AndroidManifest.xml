@@ -50,7 +50,19 @@
             android:name=".ViewBandActivity"
             android:parentActivityName=".IndividualUserActivity" />
         <activity android:name=".EditProfileActivity" />
-        <activity android:name=".ViewVenueActivity"></activity>
+        <activity android:name=".ViewVenueActivity" />
+        <activity android:name=".CreateShowActivity"
+            android:label="Create Show"
+            android:parentActivityName=".BandActivity"/>
+        <activity android:name=".VenueCreateShowActivity"
+            android:label="Create Show"
+            android:parentActivityName=".VenueActivity"/>
+        <activity android:name=".BandEditProfile"
+            android:label="Edit Profile"
+            android:parentActivityName=".BandActivity"/>
+        <activity android:name=".VenueEditProfile"
+            android:label="Edit Profile"
+            android:parentActivityName=".VenueActivity"></activity>
     </application>
 
 </manifest>
